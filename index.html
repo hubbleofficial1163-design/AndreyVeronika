@@ -7,13 +7,15 @@
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50,85 C70,70 85,55 85,40 C85,25 70,15 60,15 C50,15 50,30 50,30 C50,30 50,15 40,15 C30,15 15,25 15,40 C15,55 30,70 50,85 Z' fill='%23f8e1e1' stroke='%23e0c7c7' stroke-width='3'/></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+        
 
         :root {
             --dark-green: #1a3a2f;
@@ -106,9 +108,10 @@
             z-index: 1;
             opacity: 0.3;
         }
+        
 
         .names {
-            font-family: 'Great Vibes', cursive;
+            font-family: 'Allura', cursive;
             font-size: 5rem;
             color: #000000;  /* ← черный */
             margin-bottom: 20px;
@@ -117,6 +120,7 @@
             position: relative;
             z-index: 2;
             text-shadow: none;  /* ← убираем тень */
+            font-weight: 300; 
         }
 
         .names::after {
@@ -979,6 +983,8 @@
                 box-shadow: none;
             }
         }
+
+        /* Фикс для буквы А в имени Андрей */
         
         /* Кнопка музыки в hero */
 .hero-music-btn {
@@ -1123,13 +1129,16 @@ img,
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Обложка -->
     <section class="cover-section">
         <div class="floral-frame"></div>
         <div class="cover-content">
-            <h1 class="names">Андрей<br>&<br>Вероника</h1>
+            <h1 class="names">
+                <span class="letter-a">А</span>ндрей<br>&<br>Вероника
+            </h1>
             <div class="date">19 июня 2026</div>
             
             <div class="greeting-block">
